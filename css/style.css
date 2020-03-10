@@ -1,0 +1,82 @@
+body {
+  width: 50%;
+  margin: 0 auto;
+  background-image: url(https://ssl.gstatic.com/ui/v1/icons/mail/themes/desk/bg2_1920x1200.jpg);
+}
+
+#logo {
+  height: 100px;
+  line-height: 100px;
+  vertical-align: middle;
+}
+#logo-text {
+  color: white;
+  font-size: 25px;
+}
+
+#top-rule {
+  margin-top: 0;
+}
+
+
+.no-margin {
+  margin: 0;
+}
+
+.email-row {
+  padding: 2px;
+  border: 1px solid black;
+}
+.email-row.read {
+  background-color: lightgrey;
+}
+.email-row.unread {
+  background-color: white;
+}
+.email-text {
+  color: grey;
+}
+
+/* facciamo vedere before e after nella correzione */
+.email-text:before {
+  content: " - ";
+}
+.email-text:after {
+  content: "...";
+}
+
+/* le stelle saranno messe inizialmente come carattere speciale */
+.star:after {
+  content: "\2605";
+}
+
+footer {
+  color: white;
+  text-align: center;
+  font-size: 25px;
+  font-weight: bold;
+}
+footer span {
+  font-style: italic;
+  font-size: 15px;
+}
+
+/* Mostriamo come utilizzare le proprietà dei testi per gli allineamenti */
+#count {
+  margin-top: 5px;
+  color: white;
+  font-size: 25px;
+  /* line-height identica all'altezza del pallino #unread-count*/
+  line-height: 50px;
+}
+#unread-count {
+  display: inline-block;
+  /* height identica alla line-height*/
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: orange;
+  /* Un semplice text-align può salvarci la vita ;) */
+  text-align: center;
+  vertical-align: middle;
+}
